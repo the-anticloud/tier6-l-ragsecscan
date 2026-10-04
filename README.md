@@ -1,0 +1,108 @@
+# L_RAGSECSCAN
+
+![license](https://img.shields.io/badge/license-Apache--2.0-blue) ![licence](https://img.shields.io/badge/enterprise-dual--licence-informational) ![audit](https://img.shields.io/badge/audit-SHA3--256-orange) ![collection](https://img.shields.io/badge/collection-Anticloud%20FZ%20LLE-lightgrey)
+
+> Full evidence: `OFFICIAL_BENCHMARKS/` · lab: `ISOLATED_LAB_RESULTS/` (where present).
+
+| | |
+|---|---|
+| Collection | TIER 6 SECURITY EVAL |
+| Vendor | Anticloud FZ LLE |
+| Licence | Apache-2.0 + Enterprise commercial dual (Anticommons 1.0) |
+| Payload | documentation, evidence and licence material |
+
+## What this project is
+
+Full evidence: `OFFICIAL_BENCHMARKS/` · lab: `ISOLATED_LAB_RESULTS/` (where present).
+
+**Scope honesty:** no model decoding path ships in this project. It is a deterministic/offline component with AIOSS-style audit wiring. PAX may call it as a tool; no inference is claimed here.
+
+## Architecture
+
+```mermaid
+graph LR
+    D[docs/ handoff package] --> R[tier6-l-ragsecscan]
+    R --> E[EVIDENCE.json\nmeasured results + provenance]
+    E --> A[SHA3-256 audit chain]
+    A --> L[Apache-2.0]
+```
+
+## Install
+
+```bash
+python -m venv .venv
+. .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Detected stack: python
+
+## Evidence and measured results
+
+| Framework | Metric | Value | Provenance | Source |
+|---|---|---|---|---|
+| 04 Comprehensive Benchmarks | trl | 8/9 | commit 168c1034ffdb | `OFFICIAL_BENCHMARKS/04_COMPREHENSIVE_BENCHMARKS.md` |
+| 04 Comprehensive Benchmarks | mitre att&ck | 100/100 | commit 168c1034ffdb | `OFFICIAL_BENCHMARKS/04_COMPREHENSIVE_BENCHMARKS.md` |
+
+Every row above is quoted from a results file in this project that carries its own run provenance. Values without provenance are not published.
+
+## Millennium problem proposals
+
+This project packages Anticloud Millennium problem proposals: P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13, P14.
+
+Proposals are shipped as PDFs under `25_MILLENNIUM_PROBLEM_PROPOSALS/` in the internal handoff tree and summarised in `docs/`.
+
+## Documentation map
+
+- `01_INVESTOR_PACKAGE/`
+- `02_COMMITMENT_TO_SOCIETY/`
+- `03_COMMITMENT_TO_HUMANITY/`
+- `04_COMMITMENT_TO_ENVIRONMENT/`
+- `05_COMMITMENTS_TO_PAST_PRESENT_FUTURE/`
+- `06_WHITELABELLING_AND_REPACKAGING/`
+- `07_ENTERPRISE_LICENSE_AND_PRICING/`
+- `08_INTELLECTUAL_PROPERTY_AND_RIGHTS/`
+- `09_COMPLIANCE/`
+- `10_TECHNICAL_HANDOFF/`
+- `11_TUTORIAL_DEVELOPERS/`
+- `12_TUTORIAL_ENTERPRISE/`
+- `13_TUTORIAL_USERS/`
+- `14_DEVELOPER_COOKBOOKS/`
+- `15_DISASTER_RECOVERY/`
+- `16_VULNERABILITY_MANAGEMENT/`
+- `17_HOW_TO_UPDATE/`
+- `18_COMMAND_LINE_INTERFACE/`
+- `19_SYSTEM_OF_THINGS_SOT/`
+- `20_ACADEMIC_RESEARCH/`
+- `21_RELATED_SCIENTIFIC_RESEARCH/`
+- `22_INDEPENDENT_INSURANCE/`
+- `23_HOW_TO_CITE/`
+- `24_ANTICOMMONS_LICENSE/`
+- `25_MILLENNIUM_PROBLEM_PROPOSALS/`
+- `26_INTEGRATIONS_AND_SDK/`
+- `27_DEPENDENCIES/`
+- `28_TECHNICAL_WHITEPAPER/`
+- `29_INVESTOR_MEMO/`
+- `30_LOI/`
+- `31_UNIT_ECONOMICS/`
+- `32_CONTRACTS/`
+- `33_COMPETITIVE_MOAT/`
+- `34_FOUNDER_PROFILE/`
+- `35_INVESTOR_FAQ/`
+- `36_ADVISORY_BOARD/`
+
+## Archive manifest
+
+- `_ARCHIVES/L_RAGSECSCAN_docs.7z (23478 bytes)`
+- `_ARCHIVES/L_RAGSECSCAN_docs.7z.k5 (64 bytes)`
+- `_ARCHIVES/L_RAGSECSCAN_docs.tar.gz (32678 bytes)`
+- `_ARCHIVES/L_RAGSECSCAN_docs.tar.gz.k5 (64 bytes)`
+- `_ARCHIVES/L_RAGSECSCAN_docs.zip (75913 bytes)`
+- `_ARCHIVES/L_RAGSECSCAN_docs.zip.k5 (64 bytes)`
+- `_ARCHIVES/MANIFEST.sha3 (510 bytes)`
+
+## Licence
+
+Licensed under **Apache-2.0 + Enterprise commercial dual (Anticommons 1.0)**. See `LICENSE` and `NOTICE.md`. Apache-2.0 governs the open-source component; commercial use inside closed enterprise products is governed by the Anticloud Enterprise licence.
+
+SPDX-License-Identifier: Apache-2.0
